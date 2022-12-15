@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SWUserDefaults
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        SWUserDefaults.save(3, "key")
     }
 
     override func didReceiveMemoryWarning() {
